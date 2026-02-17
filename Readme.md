@@ -49,7 +49,7 @@ npm run dev
 PORT=5000 
 MONGO_URI=your-mongodb-url
 ```
-
+---
 
 ## ** Folder Structure: **
 
