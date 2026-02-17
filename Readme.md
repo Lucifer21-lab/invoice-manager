@@ -33,7 +33,7 @@ A high-performance **MERN Stack** invoice management application featuring autom
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/Lucifer21-lab/invoice-manager]
+git clone https://github.com/Lucifer21-lab/invoice-manager
 cd invoice-manager
 cd server
 npm install
@@ -42,9 +42,13 @@ cd ../client
 npm install
 npm run dev
 
-
+```
 ### 2. Backend
-1. Create dotenv file with PORT=5000 and MONGO_URI as your own mongodb url
+1. Create .env file with 
+```bash
+PORT=5000 
+MONGO_URI=your-mongodb-url
+```
 
 
 ## ** Folder Structure: **
