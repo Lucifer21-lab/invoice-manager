@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 const InvoiceLineSchema = require('./InvoiceLine');
-// Main Invoice Schema [cite: 3, 4]
 const InvoiceSchema = new mongoose.Schema({
     invoiceNumber: {
         type: String,
@@ -23,7 +22,7 @@ const InvoiceSchema = new mongoose.Schema({
         type: String,
         enum: ['DRAFT', 'PAID'],
         default: 'DRAFT'
-    }, // [cite: 4]
+    },
     total: {
         type: Number,
         required: true
@@ -39,7 +38,7 @@ const InvoiceSchema = new mongoose.Schema({
     isArchived: {
         type: Boolean,
         default: false
-    }, // [cite: 4]
+    },
     lineItems: [InvoiceLineSchema], // Embedding lines for simpler retrieval
     payments: [{
         type: mongoose.Schema.Types.ObjectId,

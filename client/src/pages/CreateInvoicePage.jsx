@@ -84,7 +84,6 @@ const CreateInvoicePage = () => {
 
             <form onSubmit={handleSubmit} className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 space-y-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {/* RULE: Invoice Number is read-only */}
                     <div>
                         <label className="block text-sm font-semibold text-gray-400 mb-2 italic underline">Invoice Number (Auto-generated)</label>
                         <input type="text" name="invoiceNumber" value={formData.invoiceNumber} readOnly className="w-full border p-3 rounded-lg bg-gray-50 text-gray-500 cursor-not-allowed outline-none" />
@@ -95,20 +94,18 @@ const CreateInvoicePage = () => {
                         <input type="text" name="customerName" required placeholder="Client Name" value={formData.customerName} onChange={handleChange} className="w-full border p-3 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" />
                     </div>
 
-                    {/* RULE: Issue Date is locked to today */}
                     <div>
                         <label className="block text-sm font-semibold text-gray-400 mb-2 italic underline">Issue Date (Fixed)</label>
                         <input type="date" name="issueDate" value={formData.issueDate} readOnly className="w-full border p-3 rounded-lg bg-gray-50 text-gray-500 cursor-not-allowed outline-none" />
                     </div>
 
-                    {/* RULE: Due Date must be > Current Date */}
                     <div>
                         <label className="block text-sm font-semibold text-gray-600 mb-2">Due Date *</label>
                         <input
                             type="date"
                             name="dueDate"
                             required
-                            min={new Date(new Date().getTime() + 86400000).toISOString().split('T')[0]} // Sets min date to tomorrow
+                            min={new Date(new Date().getTime() + 86400000).toISOString().split('T')[0]}
                             value={formData.dueDate}
                             onChange={handleChange}
                             className="w-full border p-3 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"

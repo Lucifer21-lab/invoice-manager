@@ -2,10 +2,9 @@ import { useEffect, useState, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import html2pdf from 'html2pdf.js';
-import { motion } from 'framer-motion'; // Added for Advanced UI
+import { motion } from 'framer-motion';
 import { CURRENCY_MAP } from '../utils/currencies';
 
-// Component Imports
 import InvoiceHeader from '../components/InvoiceHeader';
 import LineItemsTable from '../components/LineItemsTable';
 import PaymentHistory from '../components/PaymentHistory';
@@ -123,7 +122,6 @@ const InvoicePage = () => {
                 </div>
             </div>
 
-            {/* Main Content Area - Captured by PDF & Animated on Load */}
             <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}

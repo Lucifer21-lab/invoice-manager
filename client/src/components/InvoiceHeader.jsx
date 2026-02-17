@@ -46,10 +46,10 @@ const InvoiceHeader = ({ invoice }) => {
             <div className="text-right">
                 <div className="mb-4">
                     <span className={`px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase border ${isPaid
-                            ? 'bg-green-50 text-green-700 border-green-200'
-                            : isOverdue
-                                ? 'bg-red-50 text-red-700 border-red-200'
-                                : 'bg-amber-50 text-amber-700 border-amber-200'
+                        ? 'bg-green-50 text-green-700 border-green-200'
+                        : isOverdue
+                            ? 'bg-red-50 text-red-700 border-red-200'
+                            : 'bg-amber-50 text-amber-700 border-amber-200'
                         }`}>
                         {invoice.status}
                     </span>

@@ -6,7 +6,7 @@ import { CURRENCY_MAP } from '../utils/currencies';
 
 const HomePage = () => {
     const [invoices, setInvoices] = useState([]);
-    const [loading, setLoading] = useState(true); // Added loading state
+    const [loading, setLoading] = useState(true);
     const navigate = useNavigate();
 
     // Animation Config
@@ -80,7 +80,6 @@ const HomePage = () => {
                         </tr>
                     </thead>
 
-                    {/* Logic Fix: Only render tbody when NOT loading */}
                     {!loading && (
                         <motion.tbody
                             variants={containerVariants}

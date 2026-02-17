@@ -12,9 +12,9 @@ const {
 // Define routes
 router.get('/', getInvoices);
 router.post('/', createInvoice);
-router.get('/:id', getInvoiceById); // get indiviual invoice details
-router.post('/:id/payments', addPayment); // add payment
-router.post('/archive', archiveInvoice); // archieve invoice
+router.get('/:id', getInvoiceById);
+router.post('/:id/payments', addPayment);
+router.post('/archive', archiveInvoice);
 router.delete('/:id', deleteInvoice);
 
 module.exports = router;
