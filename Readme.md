@@ -35,19 +35,19 @@ A high-performance **MERN Stack** invoice management application featuring autom
 ```bash
 git clone [https://github.com/Lucifer21-lab/invoice-manager]
 cd invoice-manager
+cd server
+npm install
+node server.js
+cd ../client
+npm install
+npm run dev
 
-**Backend:**
-1. Create dotenv file with PORT and MONGO_URI as 5000 and your own mongodb url
-2. cd server
-3. npm install
-4. npm run dev or node server.js
 
-**Frontend:**
-1. cd client
-2. npm install
-3. npm run dev
+### 2. Backend
+1. Create dotenv file with PORT=5000 and MONGO_URI as your own mongodb url
 
-** Folder Structure: **
+
+## ** Folder Structure: **
 
 pro-invoice-manager/
 ├── backend/
