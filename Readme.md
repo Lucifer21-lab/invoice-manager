@@ -53,6 +53,7 @@ MONGO_URI=your-mongodb-url
 
 ## ** Folder Structure: **
 
+```bash
 pro-invoice-manager/
 ├── backend/
 │   ├── controllers/    # Tax, and Invoice logic
