@@ -33,7 +33,7 @@ A high-performance **MERN Stack** invoice management application featuring autom
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/Lucifer-Lab/invoice-manager.git]
+git clone [https://github.com/Lucifer21-lab/invoice-manager]
 cd invoice-manager
 
 **Backend:**
@@ -51,12 +51,11 @@ cd invoice-manager
 
 pro-invoice-manager/
 ├── backend/
-│   ├── controllers/    # Auth, Tax, and Invoice logic
-│   ├── models/         # User and Invoice Mongoose schemas
+│   ├── controllers/    # Tax, and Invoice logic
+│   ├── models/         # Invoice and Payment Mongoose schemas
 │   ├── routes/         # Express API endpoints
-│   └── middleware/     # JWT & Route protection
 └── client/
     ├── src/
     │   ├── components/ # Animated UI (Modal, Summary, Table)
-    │   ├── pages/      # Dashboard, Login, Register, Reset Password
+    │   ├── pages/      # Home, Invoice and Create Invoice
     │   └── utils/      # Currency Map and Global constants
